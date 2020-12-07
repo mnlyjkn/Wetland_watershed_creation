@@ -86,7 +86,7 @@ print("Set Null tool completed, now executing Is Null tool")
 Is_Null_Wetlands = IsNull(in_raster=Set_Null_Wetlands)
 Is_Null_Wetlands.save("Is_Null_Wetlands.tif") #saves is null output
 
-print("Is Null tool completed, now executing Mosaic to Equal To tool")
+print("Is Null tool completed, now executing Equal To tool")
 Null_Wetlands = EqualTo(in_raster_or_constant1=Is_Null_Wetlands,
                                  in_raster_or_constant2= 0)
 Null_Wetlands.save("Null_Wetlands.tif")  #saves equal to output
